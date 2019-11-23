@@ -4,7 +4,7 @@
     "description": "Some example tests with Jest.",
     "main": "main.js",
     "scripts": {
-        "test": "npx jest"
+        "test": "npx jest --coverage"
     },
     "author": "ST",
     "license": "MIT",
