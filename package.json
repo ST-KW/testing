@@ -1,13 +1,13 @@
 {
-    "name": "testing",
-    "version": "1.0.0",
-    "description": "",
+    "name": "Testing with Jest",
+    "version": "1.1.0",
+    "description": "Some example tests with Jest.",
     "main": "main.js",
     "scripts": {
-        "test": "npx jast"
+        "test": "npx jest"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "ST",
+    "license": "MIT",
     "devDependencies": {
         "jest": "^24.9.0"
     }
