@@ -32,4 +32,38 @@ function search(query) {
     })
 }
 
-module.exports = search
+function searchByAge(age, operator) {
+    if (operator === "younger") {
+        return persons.filter(person => {
+            if (person.age < age) {
+                return true
+            } else {
+                return false
+            }
+        })
+    }
+
+    if (operator === "older") {
+        return persons.filter(person => {
+            if (person.age > age) {
+                return true
+            } else {
+                return false
+            }
+        })
+    }
+
+    if (operator === "exact") {
+        return persons.filter(person => {
+            if (person.age === age) {
+                return true
+            } else {
+                return false
+            }
+        })
+    } else {
+        return "Unknown operator. Please use younger, older or exact."
+    }
+}
+
+module.exports = { search, searchByAge }
